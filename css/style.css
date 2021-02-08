@@ -1,0 +1,340 @@
+.container{
+    background: linear-gradient(#d00000, #6a040f);
+    background-color:#d00000;
+    height: 100vh;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+.container img.rings {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    max-width: 100vw;
+    transform: translate(-50%, -50%);
+
+    opacity: .5;
+}
+
+
+.container header {
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0;
+}
+
+.container header .logo {
+    position: relative;
+}
+
+.container header .logo img {
+    height: 8em;
+}
+
+.container header nav ul li {
+    float: left;
+
+    list-style: none;
+    margin-right: 3em;
+}
+
+.container header nav ul li a {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    
+    font: 1em 'Londrina Solid', cursive;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1;
+
+    color: white;
+}
+.container header nav ul li a:after{
+    content: '';
+    
+    width: 0;
+    height: .2em;
+    
+    background-color: #ffc107;
+
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: .5s cubic-bezier(0.17, 0.67, 0, 1.13);
+}
+
+.container header nav ul li a:hover:after{
+    width: 80%;
+}
+
+.container header .basket {
+    position: relative;
+    right: 45px;
+}
+
+.container header .basket a {
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: #fff;
+    color: #370617;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    transition: all 250ms ease-in-out;
+}
+
+.container header .basket a:hover {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffc107;
+}
+
+.container header .basket .basket-items {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    height: 20px;
+    width: 20px;
+    background-color: #370617;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    font-family: 'Mada', sans-serif;
+    font-size: 0.7em;
+    font-weight: 500;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+.container section {
+    padding-top: 30px;
+    max-width: 1400px;
+    margin: auto 45px;
+    height: inherit;
+    display: flex;
+}
+
+.container section .product {
+    position: relative;
+    color: #ffc107;
+    width: 50%;
+}
+
+.container section .product h1{
+    font: 3em 'Londrina Solid', cursive;
+    font-weight: 900;
+    letter-spacing: 3px;
+    line-height: 1em;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 0 #000;
+
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+}
+
+.container section .product h3{
+    font: 1.5em 'Londrina Solid', cursive;
+    font-weight: 900;
+    letter-spacing: 1px;
+
+    color: #FFF;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 #000;
+    -webkit-text-stroke: 1px #000;
+
+    position: relative;
+    overflow: hidden;
+    height: 32px;
+}
+
+.container section .product p{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #FFF;
+
+    width: 80%;
+
+    position: relative;
+    overflow: hidden;
+    height: 160px;
+}
+
+.container section .product strong{
+    display: block;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+
+.container section .product h2{
+    font: 1.5em 'Londrina Solid', cursive;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin: 20px 0;
+
+    color: #FFF;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 #000;
+    -webkit-text-stroke: 1px #000;
+
+    position: relative;
+    overflow: hidden;
+    height: 30px;
+}
+
+.container section .product .btn{
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+}
+
+.container section .product a{
+    font: 1em 'Londrina Solid', cursive;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #FFF;
+
+    position: relative;
+    display: inline-block;
+
+    border: 2px solid #ffc107;
+    padding: 10px 40px;
+
+    transition: .25s ease-in-out;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.container section .product a:hover{
+    background-color: #ffc107;
+    color: #370617;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container section .product a:after{
+    content: '';
+    
+    width: 0;
+    height: 100%;
+    
+    background-color: #ffc107;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    transition: .5s cubic-bezier(0.17, 0.67, 0, 1.01);
+    z-index: -1;
+}
+
+.container section .product a:hover:after{
+    width: 100%;
+}
+
+.container section .product-display{
+    position: relative;
+    width: 60%;
+}
+
+.container section .product-display figure{
+    position: relative;
+}
+
+.container section .product-display figure .doritos{
+    position: absolute;
+    width: 40em;
+    top: -7em;
+    right: 100px;
+
+    pointer-events: none;
+    z-index: 1;
+}
+
+.container section .product-display figure .backdrop{
+    position: absolute;
+    top: 10em;
+    right: 150px;
+
+    width: 32em;
+    height: 50em;
+
+    background-color: #ffae03;
+    border-radius: 30px;
+    transform: skew(-8deg, -8deg);
+}
+
+.container section .product-display figure span {
+    position: relative;
+}
+
+.container section .product-display figure span img {
+    position: absolute;
+    z-index: 5;
+}
+
+.container section .product-display figure span .chips {
+    width: 18em;
+    top: -7em;
+    left: 20em;
+
+    transform: rotate(10deg);
+}
+
+.container section .product-display figure span .ketchup {
+    width: 9em;
+    top: 20em;
+    left: 0;
+}
+
+.container section .product-display figure span .chilli {
+    width: 15em;
+    top: 17em;
+    left: 24em;
+
+    z-index: 0;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 100;
+}
+
+.first{
+    background-color: #d00000;
+}
+
+.second{
+    background-color: #d00000;
+    left: 33.3%;
+}
+
+.third{
+    background-color: #d00000;
+    left: 66.6%;
+}
+
+.hide{
+    position: absolute;
+}
